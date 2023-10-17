@@ -46,7 +46,6 @@ public void registerUser() {
 	WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.elementToBeClickable(gender));
 	gender.click();
-//	wait.until(ExpectedConditions.elementToBeSelected(FirstName));
 	FirstName.sendKeys("juhi");
 	LastName.sendKeys("sinha");
 	Email.sendKeys("juhi.gsinha@gmail.com");
@@ -54,6 +53,4 @@ public void registerUser() {
 	ConfirmPassword.sendKeys("Test@1234");
 	registerButton.click();
 	}
-
-
 	}
