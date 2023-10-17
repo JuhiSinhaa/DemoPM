@@ -9,11 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "C:\\Users\\juhi.sinha\\eclipse-workspace\\16Oct23\\features\\Readniess.feature",
 		glue={"stepDefinition"},
-		tags = "@gp",
+		tags = "@gp1",
 		dryRun=false,		
 		plugin= {"pretty"},
 		monochrome = true
 		)
 public class TestRun {
-
 }

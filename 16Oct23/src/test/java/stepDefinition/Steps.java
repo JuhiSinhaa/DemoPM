@@ -10,7 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.Login;
-import pageObjects.Login2;
+import pageObjects.Registration;
 import pageObjects.Template;
 
 
@@ -27,16 +27,31 @@ public class Steps {
 
 	@Given("Enter  all the details")
 	public void enter_all_the_details() {
-		Login2 log=new Login2(driver);
-		log.registerUser();
-		System.out.print("code2");  
+		Registration reg=new Registration(driver);
+		reg.registerUser();
 	}
 
 	@Then("I click on register button")
 	public void i_click_on_register_button() {
-		System.out.print("code3");
+		System.out.print("user registration successful");
 	}
 
+	@When("click on login")
+	public void click_on_login() {
+	Login log=new Login(driver);
+		log.login();
+	}
+	
+	
+	@When("enter credentials")
+	public void enter_credentials() {
+		
+	}
+	
+	@Then("click on login button")
+	public void click_on_login_button() {
+	    
+	}
 	
 	
 }

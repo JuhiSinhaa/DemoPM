@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Login2 {
+public class Registration {
 WebDriver driver;	
 
 	@FindBy(xpath="//*[@id='Password']")
@@ -36,7 +36,7 @@ WebDriver driver;
 	WebElement registerButton;
 
 	
-	public  Login2(WebDriver driver) {
+	public  Registration(WebDriver driver) {
 		 this.driver = driver;
          PageFactory.initElements(driver, this);
 	}
@@ -54,6 +54,7 @@ public void registerUser() {
 	ConfirmPassword.sendKeys("Test@1234");
 	registerButton.click();
 	}
+
 
 
 	}
